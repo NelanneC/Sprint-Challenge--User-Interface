@@ -31,7 +31,8 @@ footer, header, hgroup, menu, nav, section {
 
 
 
-/* Header stuff goes here */
+/*~~~~~~~~~~~~~~~~~~~~~header/ navigation bar/ home~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
 #home {
     width: 800px;
     margin: 0 auto;
@@ -56,6 +57,8 @@ footer, header, hgroup, menu, nav, section {
     color: black;
     font-family: 'Roboto', sans-serif;
 }
+
+/*~~~~~~~~~~~~~~~~~~~~~body/main content~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 body {
 	line-height: 1;
@@ -130,7 +133,7 @@ p {
     justify-content: space-evenly;
 }
 
-.middle-content .boxes .box {
+.middle-content .boxes .box{
     width: 12.5%;
     height: 100px;
     background: black;
@@ -140,6 +143,50 @@ p {
     align-items: center;
     justify-content: center;
 }
+
+.boxes .box.one{
+    background: teal;
+}
+
+.boxes .box.two{
+    background: gold;
+}
+
+.boxes .box.three{
+    background: cadetblue;
+}
+
+.boxes .box.four{
+    background: coral;
+}
+
+.boxes .box.five{
+    background: crimson;
+}
+
+.boxes .box.six{
+    background: forestgreen;
+}
+
+.boxes .box.seven{
+    background: darkorchid;
+}
+
+.boxes .box.eight{
+    background: hotpink;
+}
+
+.boxes .box.nine{
+    background: indigo;
+}
+
+.boxes .box.ten{
+    background: dodgerblue;
+}
+
+
+
+
 
 .bottom-content {
     display: flex;
@@ -154,6 +201,10 @@ p {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~footer~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
 
 footer {
     width: 100%;
