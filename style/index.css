@@ -206,6 +206,51 @@ footer nav a {
   
 /*~~~~~~~~~~~~~~~~~~~~~body/main content~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
+    h2{
+    font-size: 200%;
+    }
+    
+    .container{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    }
+    
+    .container .image-container{
+    /* does nothing */
+    }
+    
+    .container .image-container img{
+    
+    height: 200px;
+    object-fit: cover; 
+    max-width: 500px;
+    }
+    
+    body .container .top-content,  body .container .middle-content, .boxes, body .container .bottom-content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    align-items: center;
+    } 
+    
+    body .container .middle-content .boxes .box{
+    height: 170px;
+    width: 170px;
+    }
+    
+    .bottom-content .text-container, .top-content .text-container{
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+    width: 85%; 
+    }
+    
+    .middle-content {
+    border-bottom: none;
+    }
 
 
 
