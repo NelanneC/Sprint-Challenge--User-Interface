@@ -175,10 +175,51 @@ footer nav a {
 }
 
 
-@media(max-width: 500px){
+@media(max-width: 800px){
 
-    *{
-        
+/*~~~~~~~~~~~~~~~~~~~~~header/ navigation bar/ home~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#home, #home nav, #home nav .nav-bar  {
+    width: 500px; 
+    } 
+   
+    #home nav .nav-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     }
+    
+    #home nav .nav-bar img{ 
+    width: 40%;
+    margin-bottom: 20px;
+    }
+    
+    #home nav .nav-bar a{
+    text-align: center;
+    padding: 8px;
+    font-size: 200%;
+    }
+
+  
+/*~~~~~~~~~~~~~~~~~~~~~end of header/ navigation bar/ home~~~~~~~~~~~~~~~~~~~~~*/
+  
+/*~~~~~~~~~~~~~~~~~~~~~body/main content~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~end of body/main content~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  
+  
+/*~~~~~~~~~~~~~~~~~~~~~~~footer~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+
+
+  
+/*~~~~~~~~~~~~~~~~~~~~~~~footer~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
 
 }
