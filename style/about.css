@@ -40,8 +40,8 @@ footer, header, hgroup, menu, nav, section {
     padding-top: 30px;
 }
 #home nav {
+    
     width: 800px;
-    background-color: coral;
 }
 
 #home nav .nav-bar {
@@ -59,26 +59,48 @@ footer, header, hgroup, menu, nav, section {
     font-family: 'Roboto', sans-serif;
 }
 
+/*~~~~~~~~~~~~~~~~~~~~~end of header/ navigation bar/ home~~~~~~~~~~~~~~~~~~~~~*/
+      
+/*~~~~~~~~~~~~~~~~~~~~~body/main content~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+.container .image-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container .image-container img{
+    background-color: salmon;
+    margin: 20px 20px 80px 20px;
+    height: auto;
+    max-width: 800px;
+}
+
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
-* {
+*{
     box-sizing: border-box;
 }
 
@@ -95,6 +117,8 @@ h1, h2, h3, h4, h5 {
 
 p {
     line-height: 1.4;
+    margin-bottom: 5%;
+    text-indent: 10%;
 }
 
 .container {
@@ -106,24 +130,19 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    margin-top: 20px;
 }
 
 .top-content .text-container {
-    width: 48%;
+    width: 100%;
     padding: 0 1%;
     padding-bottom: 20px;  
 }
 
-.middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
-}
-
-.middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
+h2 {
+    font-size: 200%;
+    margin-bottom: 3%;
+    text-align: center;
 }
 
 .middle-content .boxes {
@@ -153,9 +172,10 @@ p {
     padding-right: 4%;
 }
 
-.bottom-content .text-container:last-child {
-    padding-right: 0;
-}
+/*~~~~~~~~~~~~~~~~~~~~~~~end of body/main content~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+      
+      
+/*~~~~~~~~~~~~~~~~~~~~~~~footer~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 footer {
     width: 100%;
@@ -175,3 +195,130 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~media inquiry~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+@media(max-width: 500px){
+
+    /*~~~~~~~~~~~~~~~~~~~~~header/ navigation bar/ home~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+    
+    #home, #home nav, #home nav .nav-bar  {
+        width: 500px;
+    } 
+       
+    #home nav .nav-bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        
+    #home nav .nav-bar img{ 
+        width: 40%;
+        margin-bottom: 20px;
+    }
+    
+    #home nav .nav-bar a{
+        text-align: center;
+        padding: 8px;
+        font-size: 200%;
+    }
+    
+      
+    /*~~~~~~~~~~~~~~~~~~~~~end of header/ navigation bar/ home~~~~~~~~~~~~~~~~~~~~~*/
+      
+    /*~~~~~~~~~~~~~~~~~~~~~body/main content~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+    
+    h2{
+        font-size: 200%;
+        text-align: justify;
+        text-indent: 10%;
+    }
+    
+    .container{
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 0px;
+        
+    }
+    
+    
+    .container .image-container img{
+        height: 200px;
+        object-fit: cover; 
+        max-width: 500px;
+    }
+
+    .text-container{
+        margin: 0; 
+        padding: 0;  
+    }
+
+
+    
+    body .container .top-content,  body .container .middle-content, .boxes, body .container .bottom-content{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        align-items: center;
+    } 
+    
+    body .container .middle-content .boxes .box{
+        height: 170px;
+        width: 170px;
+    }
+    
+    .bottom-content .text-container, .top-content .text-container{
+        justify-content: space-evenly;
+        margin-bottom: 40px;
+        width: 85%; 
+    }
+    
+    .middle-content {
+        border-bottom: none;
+    }
+
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~end of body/main content~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+    
+    
+/*~~~~~~~~~~~~~~~~~~~~~~~footer~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+    
+    .container footer{
+        background-color: black;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        border-right: 10px solid white;  
+    }
+    
+    footer nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    footer nav a{
+        font-size: 200%;
+        padding: 2%;
+    }
+
+    
+/*~~~~~~~~~~~~~~~~~~~~~~~footer~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+    
+    }

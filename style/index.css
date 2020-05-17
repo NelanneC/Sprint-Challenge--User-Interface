@@ -225,115 +225,208 @@ footer nav a {
     text-decoration: none;
 }
 
+    
 
-@media(max-width: 800px){
+@media(min-width: 501px) and (max-width: 800px){
+
+    .nav-bar{
+        padding-left:3%;
+    }
+    #home nav a {
+        font-size: 150%;
+        margin-left: 25px;
+        margin-right: 25px;
+        padding: 0;
+    }
+
+    .text-container h2{
+        font-size:150%;
+        margin: 2px;
+    }
+
+    .container{
+        max-width: 800px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .container .top-content{
+        margin-top: 10px;
+    }
+
+    .container .top-content .text-container{
+        width: 800px;
+    }
+
+    .middle-content{ 
+        width: 800px;
+        padding-bottom:10px;
+    }
+
+    .middle-content .boxes{ 
+        display: flex;
+        flex-direction: row;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .middle-content .boxes .box{
+        width: 200px;
+        height: 200px;
+        font-size: 25px;
+        
+    }
+
+    .middle-content h2{
+        font-size: 25px;
+        padding: 40px;
+    }
+
+    .bottom-content{
+        width: 800px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 25px 0px 40px 15px;
+        margin: 0;
+    }
+
+    .bottom-content .text-container{
+        font-size: 100%;
+        width: 350px;
+    }
+
+    footer{
+        display: flex;
+        justify-content:
+    }
+
+    footer nav{
+        width: 800px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding:0;
+        margin: 80px;
+    }
+
+    footer nav a{
+        font-size: 250%;
+    }
+
+    }
+  
+@media(max-width: 500px){
 
 /*~~~~~~~~~~~~~~~~~~~~~header/ navigation bar/ home~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-#home, #home nav, #home nav .nav-bar  {
-    width: 500px; 
+    #home, #home nav, #home nav .nav-bar  {
+        width: 500px; 
     } 
-   
+    
     #home nav .nav-bar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     
     #home nav .nav-bar img{ 
-    width: 40%;
-    margin-bottom: 20px;
+        width: 40%;
+        margin-bottom: 20px;
     }
     
     #home nav .nav-bar a{
-    text-align: center;
-    padding: 8px;
-    font-size: 200%;
+        text-align: center;
+        padding: 8px;
+        font-size: 200%;
     }
 
-  
-/*~~~~~~~~~~~~~~~~~~~~~end of header/ navigation bar/ home~~~~~~~~~~~~~~~~~~~~~*/
-  
-/*~~~~~~~~~~~~~~~~~~~~~body/main content~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+    
+    /*~~~~~~~~~~~~~~~~~~~~~end of header/ navigation bar/ home~~~~~~~~~~~~~~~~~~~~~*/
+    
+    /*~~~~~~~~~~~~~~~~~~~~~body/main content~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
     h2{
-    font-size: 200%;
+        font-size: 200%;
     }
-    
+        
     .container{
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-top: 30px;
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 30px;
     }
     
-    .container .image-container{
-    /* does nothing */
-    }
-    
+            
     .container .image-container img{
-    
-    height: 200px;
-    object-fit: cover; 
-    max-width: 500px;
+        height: 200px;
+        object-fit: cover; 
+        max-width: 500px;
     }
+
+
+
+
+
     
     body .container .top-content,  body .container .middle-content, .boxes, body .container .bottom-content{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-top: 40px;
-    align-items: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        align-items: center;
     } 
     
     body .container .middle-content .boxes .box{
-    height: 170px;
-    width: 170px;
+        height: 170px;
+        width: 170px;
     }
     
     .bottom-content .text-container, .top-content .text-container{
-    justify-content: space-evenly;
-    margin-bottom: 40px;
-    width: 85%; 
+        justify-content: space-evenly;
+        margin-bottom: 40px;
+        width: 85%; 
     }
     
     .middle-content {
-    border-bottom: none;
+        border-bottom: none;
     }
 
 
 
 /*~~~~~~~~~~~~~~~~~~~~~~~end of body/main content~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-  
-  
+    
+    
 /*~~~~~~~~~~~~~~~~~~~~~~~footer~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 
-  
-.container footer{
-    background-color: black;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    border-right: 10px solid white;  
-    }
     
+    .container footer{
+        background-color: black;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        border-right: 10px solid white;  
+    }
+        
     footer nav{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    
+        
     footer nav a{
-    font-size: 200%;
-    padding: 2%;
+        font-size: 200%;
+        padding: 2%;
     }
+
+    
+/*~~~~~~~~~~~~~~~~~~~~~~~footer~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+}
 
   
-/*~~~~~~~~~~~~~~~~~~~~~~~footer~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-
-
-}
+  
+  
